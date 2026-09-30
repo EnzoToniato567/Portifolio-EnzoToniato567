@@ -1,0 +1,8 @@
+{
+  "scripts": {
+    "build": "node scripts/copy-i18next.cjs"
+  },
+  "dependencies": {
+    "i18next": "^26.4.2"
+  }
+}

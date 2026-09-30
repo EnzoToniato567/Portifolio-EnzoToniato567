@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" href="assets/icon.png">
+  <meta name="description" content="Projetos de Flutter, frontend e full-stack de Enzo Toniato.">
+  <title>Projetos | Enzo Toniato</title>
+  <link rel="stylesheet" href="styles/style.css">
+</head>
+
+<body class="site-page projects-page">
+  <div class="ambient ambient-one"></div>
+  <div class="ambient ambient-two"></div>
+  <header class="topbar">
+    <a class="brand" href="home.html" aria-label="Ir para o início"><span class="brand-mark"><img src="assets/icon.png" alt=""></span><span>Enzo
+        Toniato</span></a>
+    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav"
+      aria-label="Abrir menu"><span></span><span></span></button>
+    <nav class="site-nav" id="site-nav"><a href="home.html#inicio">Início</a><a href="home.html#sobre">Sobre</a><a
+        href="home.html#skills">Skills</a><a class="active" href="projects.html">Projetos</a><a class="nav-button"
+        href="home.html#contato">Contato</a></nav>
+    <div class="site-controls">
+      <label class="select-control"><span data-i18n="controls.theme">Tema</span><select id="theme-selector"
+          aria-label="Tema">
+          <option value="forest">Emerald forest</option>
+          <option value="cyan">Cyan neon</option>
+          <option value="light" data-i18n="themes.light">Claro</option>
+        </select></label>
+      <label class="select-control"><span data-i18n="controls.language">Idioma</span><select id="language-selector"
+          aria-label="Idioma">
+          <option value="pt">PT</option>
+          <option value="en">EN</option>
+        </select></label>
+    </div>
+  </header>
+
+  <main class="archive-main">
+    <section class="archive-hero section-shell" data-reveal>
+      <p class="eyebrow">Projetos / 22 selecionados</p>
+      <h1>Ideias transformadas<br>em <span>experiências digitais.</span></h1>
+      <p>Projetos desenvolvidos com C, Flutter, tecnologias web e soluções full-stack.</p>
+    </section>
+
+    <section class="section-shell project-controls" data-reveal>
+      <div class="filter-bar" role="group" aria-label="Filtrar projetos">
+        <button class="filter-button active" type="button" data-filter="all">Todos</button>
+        <button class="filter-button" type="button" data-filter="c">C</button>
+        <button class="filter-button" type="button" data-filter="flutter">Flutter</button>
+        <button class="filter-button" type="button" data-filter="frontend">Frontend</button>
+        <button class="filter-button" type="button" data-filter="fullstack">Full-stack</button>
+      </div>
+      <p class="filter-hint">Passe o cursor sobre um card para ver a descrição.</p>
+    </section>
+
+    <section class="section-shell archive-grid" id="project-grid">
+      <header class="project-group" data-project-group="flutter" data-reveal><p>Flutter</p><h2>Aplicativos mobile</h2><span>12 projetos em Dart, Flutter e integrações com APIs.</span></header>
+      <article class="archive-card" data-category="flutter" data-reveal>
+        <div class="archive-icon blue"><img src="assets/flutter.png" alt="Flutter"></div>
+        <p class="project-kicker">FLUTTER</p>
+        <h2>Financiamento</h2>
+        <p class="card-stack">Dart · Flutter</p>
+        <div class="archive-card-details">
+          <p>Aplicativo para simular valores, parcelas e condições de financiamento.</p><a
+            href="https://github.com/EnzoToniato567/Financiamento-Flutter2026" target="_blank"
+            rel="noopener noreferrer">Ver no GitHub <span>↗</span></a>
+        </div>
+      </article>
+      <article class="archive-card" data-category="flutter" data-reveal>
+        <div class="archive-icon blue"><img src="assets/flutter.png" alt="Flutter"></div>
+        <p class="project-kicker">FLUTTER</p>
+        <h2>Quiz Flutter</h2>
+        <p class="card-stack">Dart · Flutter</p>
+        <div class="archive-card-details">
+          <p>Aplicativo de perguntas e respostas com interação e pontuação.</p><a
+            href="https://github.com/EnzoToniato567/Quiz-Flutter-2026" target="_blank" rel="noopener noreferrer">Ver no
+            GitHub <span>↗</span></a>
+        </div>
+      </article>
+      <article class="archive-card" data-category="flutter" data-reveal>
+        <div class="archive-icon blue"><img src="assets/flutter.png" alt="Flutter"></div>
+        <p class="project-kicker">FLUTTER</p>
+        <h2>Consumo de Água</h2>
+        <p class="card-stack">Dart · Flutter</p>
+        <div class="archive-card-details">
+          <p>Calculadora para acompanhar e estimar o consumo de água.</p><a
+            href="https://github.com/EnzoToniato567/Consumo_De_Agua_Flutter" target="_blank"
+            rel="noopener noreferrer">Ver no GitHub <span>↗</span></a>
+        </div>
+      </article>
+      <article class="archive-card" data-category="flutter" data-reveal>
+        <div class="archive-icon blue"><img src="assets/flutter.png" alt="Flutter"></div>
+        <p class="project-kicker">FLUTTER</p>
+        <h2>Abastecimento de Veículos</h2>
+        <p class="card-stack">Dart · Flutter</p>
+        <div class="archive-card-details">
+          <p>Aplicativo para cálculos relacionados ao abastecimento de veículos.</p><a
+            href="https://github.com/EnzoToniato567/Abastecimento_De_Veiculos_Flutter" target="_blank"
+            rel="noopener noreferrer">Ver no GitHub <span>↗</span></a>
+        </div>
+      </article>
+      <article class="archive-card" data-category="flutter" data-reveal>
+        <div class="archive-icon blue"><img src="assets/flutter.png" alt="Flutter"></div>
+        <p class="project-kicker">FLUTTER</p>
+        <h2>Bitola</h2>
+        <p class="card-stack">Dart · Flutter</p>
+        <div class="archive-card-details">
+          <p>Ferramenta para apoiar cálculos e consultas de bitola.</p><a
+            href="https://github.com/EnzoToniato567/Bitola-Flutter2026" target="_blank" rel="noopener noreferrer">Ver no
+            GitHub <span>↗</span></a>
+        </div>
+      </article>
+      <article class="archive-card" data-category="flutter" data-reveal>
+        <div class="archive-icon blue"><img src="assets/flutter.png" alt="Flutter"></div>
+        <p class="project-kicker">FLUTTER · API</p>
+        <h2>Consulta ViaCEP</h2>
+        <p class="card-stack">Dart · Flutter · REST API</p>
+        <div class="archive-card-details">
+          <p>Consulta de endereços por CEP com integração à API ViaCEP.</p><a
+            href="https://github.com/EnzoToniato567/Flutter-API-ViaCEP" target="_blank" rel="noopener noreferrer">Ver no
+            GitHub <span>↗</span></a>
+        </div>
+      </article>
+      <article class="archive-card" data-category="flutter" data-reveal>
+        <div class="archive-icon blue"><img src="assets/flutter.png" alt="Flutter"></div>
+        <p class="project-kicker">FLUTTER</p>
+        <h2>Calculadora IMC</h2>
+        <p class="card-stack">Dart · Flutter</p>
+        <div class="archive-card-details">
+          <p>Aplicativo para calcular o índice de massa corporal de forma rápida.</p><a
+            href="https://github.com/EnzoToniato567/Flutter_IMC" target="_blank" rel="noopener noreferrer">Ver no GitHub
+            <span>↗</span></a>
+        </div>
+      </article>
+      <article class="archive-card" data-category="flutter" data-reveal>
+        <div class="archive-icon blue"><img src="assets/flutter.png" alt="Flutter"></div>
+        <p class="project-kicker">FLUTTER</p>
+        <h2>Caminhadas e Calorias</h2>
+        <p class="card-stack">Dart · Flutter</p>
+        <div class="archive-card-details">
+          <p>Aplicativo para estimar o gasto calórico em caminhadas.</p><a
+            href="https://github.com/EnzoToniato567/Caminhadas_Calorias_Flutter" target="_blank"
+            rel="noopener noreferrer">Ver no GitHub <span>↗</span></a>
+        </div>
+      </article>
+      <article class="archive-card" data-category="flutter" data-reveal>
+        <div class="archive-icon blue"><img src="assets/flutter.png" alt="Flutter"></div>
+        <p class="project-kicker">FLUTTER · JSON</p>
+        <h2>Funcionários JSON</h2>
+        <p class="card-stack">Dart · Flutter · JSON</p>
+        <div class="archive-card-details">
+          <p>Leitura e exibição de dados de funcionários a partir de JSON.</p><a
+            href="https://github.com/EnzoToniato567/Flutter_Funcionarios_Json" target="_blank"
+            rel="noopener noreferrer">Ver no GitHub <span>↗</span></a>
+        </div>
+      </article>
+      <article class="archive-card" data-category="flutter" data-reveal>
+        <div class="archive-icon blue"><img src="assets/flutter.png" alt="Flutter"></div>
+        <p class="project-kicker">FLUTTER</p>
+        <h2>Splash Screen</h2>
+        <p class="card-stack">Dart · Flutter</p>
+        <div class="archive-card-details">
+          <p>Tela de abertura para aprimorar a experiência inicial do aplicativo.</p><a
+            href="https://github.com/EnzoToniato567/Splash_Screen_Flutter" target="_blank" rel="noopener noreferrer">Ver
+            no GitHub <span>↗</span></a>
+        </div>
+      </article>
+      <article class="archive-card" data-category="flutter" data-reveal>
+        <div class="archive-icon blue"><img src="assets/flutter.png" alt="Flutter"></div>
+        <p class="project-kicker">FLUTTER</p>
+        <h2>Produtos</h2>
+        <p class="card-stack">Dart · Flutter</p>
+        <div class="archive-card-details">
+          <p>Aplicativo para listagem e apresentação de produtos.</p><a
+            href="https://github.com/EnzoToniato567/Flutter_Produtos" target="_blank" rel="noopener noreferrer">Ver no
+            GitHub <span>↗</span></a>
+        </div>
+      </article>
+
+      <header class="project-group" data-project-group="c" data-reveal><p>C</p><h2>Fundamentos de programação</h2><span>2 repositórios com lógica, exercícios e programação estruturada.</span></header>
+      <article class="archive-card" data-category="c" data-reveal>
+        <div class="archive-icon blue"><img src="assets/c.png" alt="C"></div>
+        <p class="project-kicker">LINGUAGEM C</p>
+        <h2>Arquivos C</h2>
+        <p class="card-stack">C · Lógica de programação</p>
+        <div class="archive-card-details">
+          <p>Coleção de exercícios e arquivos desenvolvidos na linguagem C.</p><a href="https://github.com/EnzoToniato567/Arquivos-C" target="_blank" rel="noopener noreferrer">Ver no GitHub <span>↗</span></a>
+        </div>
+      </article>
+      <article class="archive-card" data-category="c" data-reveal>
+        <div class="archive-icon blue"><img src="assets/c.png" alt="C"></div>
+        <p class="project-kicker">LINGUAGEM C</p>
+        <h2>Repositório LOP</h2>
+        <p class="card-stack">C · Lógica de programação</p>
+        <div class="archive-card-details">
+          <p>Repositório de atividades da disciplina de Lógica de Programação em C.</p><a href="https://github.com/EnzoToniato567/Repositorio-LOP" target="_blank" rel="noopener noreferrer">Ver no GitHub <span>↗</span></a>
+        </div>
+      </article>
+
+      <header class="project-group" data-project-group="frontend" data-reveal><p>Frontend</p><h2>Experiências para web</h2><span>6 projetos com HTML, CSS, JavaScript, React e Vite.</span></header>
+      <article class="archive-card" data-category="frontend" data-reveal>
+        <div class="archive-icon orange"><img src="assets/vite.png" alt="Vite"></div>
+        <p class="project-kicker">FRONTEND</p>
+        <h2>Cafeteria Aroma</h2>
+        <p class="card-stack">JavaScript · React · Vite</p>
+        <div class="archive-card-details">
+          <p>Interface de uma cafeteria criada com JavaScript, React e Vite.</p>
+          <div class="card-links"><a href="https://github.com/EnzoToniato567/Cafeteria_Vercel" target="_blank"
+              rel="noopener noreferrer">GitHub <span>↗</span></a><a href="https://cafeteria-vercel-jsx.vercel.app"
+              target="_blank" rel="noopener noreferrer">Visitar site <span>↗</span></a></div>
+        </div>
+      </article>
+      <article class="archive-card" data-category="frontend" data-reveal>
+        <div class="archive-icon orange"><img src="assets/html.png" alt="HTML"></div>
+        <p class="project-kicker">FRONTEND</p>
+        <h2>Pizzaria Sesi</h2>
+        <p class="card-stack">HTML · CSS · JavaScript</p>
+        <div class="archive-card-details">
+          <p>Website para apresentação de uma pizzaria, com layout e interações no navegador.</p>
+          <div class="card-links"><a href="https://github.com/EnzoToniato567/Pizzaria_Sesi" target="_blank"
+              rel="noopener noreferrer">GitHub <span>↗</span></a><a
+              href="https://enzotoniato567.github.io/Pizzaria_Sesi" target="_blank" rel="noopener noreferrer">Visitar
+              site <span>↗</span></a></div>
+        </div>
+      </article>
+      <article class="archive-card" data-category="frontend" data-reveal>
+        <div class="archive-icon orange"><img src="assets/js.png" alt="JavaScript"></div>
+        <p class="project-kicker">FRONTEND</p>
+        <h2>Truco Cartas</h2>
+        <p class="card-stack">HTML · CSS · JavaScript</p>
+        <div class="archive-card-details">
+          <p>Jogo de cartas desenvolvido para o navegador com JavaScript.</p>
+          <div class="card-links"><a href="https://github.com/EnzoToniato567/Truco-Cartas" target="_blank"
+              rel="noopener noreferrer">GitHub <span>↗</span></a><a href="https://enzotoniato567.github.io/Truco-Cartas"
+              target="_blank" rel="noopener noreferrer">Visitar site <span>↗</span></a></div>
+        </div>
+      </article>
+      <article class="archive-card" data-category="frontend" data-reveal>
+        <div class="archive-icon orange"><img src="assets/js.png" alt="JavaScript"></div>
+        <p class="project-kicker">FRONTEND</p>
+        <h2>Pedra, Papel e Tesoura</h2>
+        <p class="card-stack">HTML · CSS · JavaScript</p>
+        <div class="archive-card-details">
+          <p>Versão web do jogo clássico com lógica feita em JavaScript.</p>
+          <div class="card-links"><a href="https://github.com/EnzoToniato567/Pedra_Papel_Tesoura" target="_blank"
+              rel="noopener noreferrer">GitHub <span>↗</span></a><a
+              href="https://enzotoniato567.github.io/Pedra_Papel_Tesoura" target="_blank"
+              rel="noopener noreferrer">Visitar site <span>↗</span></a></div>
+        </div>
+      </article>
+      <article class="archive-card" data-category="frontend" data-reveal>
+        <div class="archive-icon orange"><img src="assets/html.png" alt="HTML"></div>
+        <p class="project-kicker">FRONTEND</p>
+        <h2>Álbum Copa 2026</h2>
+        <p class="card-stack">HTML · CSS · JavaScript</p>
+        <div class="archive-card-details">
+          <p>Aplicação web inspirada em um álbum de figurinhas da Copa do Mundo.</p>
+          <div class="card-links"><a href="https://github.com/EnzoToniato567/Album-Copa_2026" target="_blank"
+              rel="noopener noreferrer">GitHub <span>↗</span></a><a
+              href="https://enzotoniato567.github.io/Album-Copa_2026" target="_blank" rel="noopener noreferrer">Visitar
+              site <span>↗</span></a></div>
+        </div>
+      </article>
+      <article class="archive-card" data-category="frontend" data-reveal>
+        <div class="archive-icon orange"><img src="assets/js.png" alt="JavaScript"></div>
+        <p class="project-kicker">FRONTEND · API</p>
+        <h2>Valor do Dólar</h2>
+        <p class="card-stack">HTML · CSS · JavaScript</p>
+        <div class="archive-card-details">
+          <p>Aplicação web para consultar e apresentar a cotação do dólar.</p>
+          <div class="card-links"><a href="https://github.com/EnzoToniato567/Valor-Dolar" target="_blank"
+              rel="noopener noreferrer">GitHub <span>↗</span></a><a href="https://enzotoniato567.github.io/Valor-Dolar"
+              target="_blank" rel="noopener noreferrer">Visitar site <span>↗</span></a></div>
+        </div>
+      </article>
+
+      <header class="project-group" data-project-group="fullstack" data-reveal><p>Full-stack</p><h2>Aplicações completas</h2><span>3 projetos com integração entre frontend, backend e dados.</span></header>
+      <article class="archive-card" data-category="fullstack" data-reveal>
+        <div class="archive-icon green"><img src="assets/node.png" alt="Node.js"></div>
+        <p class="project-kicker">FULL-STACK</p>
+        <h2>Just in Time</h2>
+        <p class="card-stack">JavaScript · Full-stack</p>
+        <div class="archive-card-details">
+          <p>Projeto full-stack desenvolvido para praticar uma aplicação completa.</p><a
+            href="https://github.com/EnzoToniato567/just_in_time_01_2026" target="_blank" rel="noopener noreferrer">Ver
+            no GitHub <span>↗</span></a>
+        </div>
+      </article>
+      <article class="archive-card" data-category="fullstack" data-reveal>
+        <div class="archive-icon green"><img src="assets/node.png" alt="Node.js"></div>
+        <p class="project-kicker">FULL-STACK</p>
+        <h2>GitParty</h2>
+        <p class="card-stack">JavaScript · Full-stack</p>
+        <div class="archive-card-details">
+          <p>Aplicação full-stack criada para explorar integração entre frontend e backend.</p><a
+            href="https://github.com/EnzoToniato567/GitParty_Fullstack" target="_blank" rel="noopener noreferrer">Ver no
+            GitHub <span>↗</span></a>
+        </div>
+      </article>
+      <article class="archive-card" data-category="fullstack" data-reveal>
+        <div class="archive-icon green"><img src="assets/node.png" alt="Node.js"></div>
+        <p class="project-kicker">FULL-STACK</p>
+        <h2>Estacionamento</h2>
+        <p class="card-stack">JavaScript · Full-stack</p>
+        <div class="archive-card-details">
+          <p>Sistema full-stack voltado ao controle e gerenciamento de estacionamento.</p><a
+            href="https://github.com/EnzoToniato567/Estacionamento-FullStack" target="_blank"
+            rel="noopener noreferrer">Ver no GitHub <span>↗</span></a>
+        </div>
+      </article>
+    </section>
+  </main>
+  <footer class="site-footer">
+    <p>© <span id="year"></span> Enzo Toniato.</p>
+    <p class="ai-notice">Este portfólio contém componentes gerados por IA.</p>
+  </footer>
+  <script src="js/vendor/i18next.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>
