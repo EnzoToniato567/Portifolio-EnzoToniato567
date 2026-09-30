@@ -206,6 +206,7 @@ img { display: block; max-width: 100%; }
 .social-link:hover { color: var(--acid); transform: translateY(-2px); }
 .social-link svg, .social-link img { width: 18px; height: 18px; }
 .social-link svg { fill: none; stroke: currentColor; stroke-width: 1.8; }
+.social-link svg.linkedin-icon { fill: currentColor; stroke: none; }
 .social-link img { object-fit: contain; filter: brightness(0) invert(1); }
 
 .site-footer { display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 5px; width: min(calc(100% - 48px), var(--page-width)); min-height: 86px; margin: 0 auto; border-top: 1px solid var(--line); color: var(--muted); font-size: 0.76rem; text-align: center; }
