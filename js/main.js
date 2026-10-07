@@ -34,7 +34,7 @@ const resources = {
         whatsapp: 'Interface de uma cafeteria construída com React, JavaScript e Vite.'
       },
       contact: { eyebrow: 'Vamos conversar', title: 'Tem uma ideia para construir?', description: 'Vamos transformar sua ideia em um produto digital.', email: 'E-mail', social: 'Também estou em' },
-      archive: { eyebrow: 'Projetos / 22 selecionados', title: 'Ideias transformadas<br>em <span>experiências digitais.</span>', description: 'Projetos desenvolvidos com C, Flutter, tecnologias web e soluções full-stack.', all: 'Todos', c: 'C', flutter: 'Flutter', frontend: 'Frontend', fullstack: 'Full-stack', hint: 'Passe o cursor sobre um card para ver a descrição.', github: 'Ver no GitHub', visit: 'Visitar site', groups: [['Aplicativos mobile', '12 projetos em Dart, Flutter e integrações com APIs.'], ['Fundamentos de programação', '2 repositórios com lógica, exercícios e programação estruturada.'], ['Experiências para web', '6 projetos com HTML, CSS, JavaScript, React e Vite.'], ['Aplicações completas', '3 projetos com integração entre frontend, backend e dados.']] },
+      archive: { eyebrow: 'Projetos / 26 selecionados', title: 'Ideias transformadas<br>em <span>experiências digitais.</span>', description: 'Projetos desenvolvidos com C, Flutter, tecnologias web e soluções full-stack.', all: 'Todos', c: 'C', flutter: 'Flutter', frontend: 'Frontend', fullstack: 'Full-stack', hint: 'Passe o cursor sobre um card para ver a descrição.', github: 'Ver no GitHub', visit: 'Visitar site', groups: [['Aplicativos mobile', '15 projetos em 17 repositórios com Dart, Flutter e integrações com APIs.'], ['Fundamentos de programação', '2 repositórios com lógica, exercícios e programação estruturada.'], ['Experiências para web', '6 projetos com HTML, CSS, JavaScript, React e Vite.'], ['Aplicações completas', '3 projetos com integração entre frontend, backend e dados.']] },
       cards: [
         ['Financiamento', 'Aplicativo para simular valores, parcelas e condições de financiamento.'],
         ['Quiz Flutter', 'Aplicativo de perguntas e respostas com interação e pontuação.'],
@@ -47,6 +47,10 @@ const resources = {
         ['Funcionários JSON', 'Leitura e exibição de dados de funcionários a partir de JSON.'],
         ['Splash Screen', 'Tela de abertura para aprimorar a experiência inicial do aplicativo.'],
         ['Produtos', 'Aplicativo para listagem e apresentação de produtos.'],
+        ['Fotos de Caminhadas', 'Aplicativo para registrar e organizar fotos tiradas durante caminhadas.'],
+        ['GPS', 'Aplicativo Flutter com recursos de localização e dados de GPS.'],
+        ['Rotas e Mapas', 'Projeto de navegação que reúne rotas nativas e visualização de mapas.'],
+        ['Google Maps e API', 'Projeto que combina mapas do Google com consumo e integração de sua API.'],
         ['Arquivos C', 'Coleção de exercícios e arquivos desenvolvidos na linguagem C.'],
         ['Repositório LOP', 'Repositório de atividades da disciplina de Lógica de Programação em C.'],
         ['Cafeteria Aroma', 'Interface de uma cafeteria criada com JavaScript, React e Vite.'],
@@ -96,7 +100,7 @@ const resources = {
         whatsapp: 'A coffee shop interface built with React, JavaScript, and Vite.'
       },
       contact: { eyebrow: 'Let’s talk', title: 'Have an idea to build?', description: 'Let’s turn your idea into a digital product.', email: 'Email', social: 'You can also find me on' },
-      archive: { eyebrow: 'Projects / 22 selected', title: 'Ideas transformed<br>into <span>digital experiences.</span>', description: 'Projects built with C, Flutter, web technologies, and full-stack solutions.', all: 'All', c: 'C', flutter: 'Flutter', frontend: 'Frontend', fullstack: 'Full-stack', hint: 'Hover over a card to see its description.', github: 'View on GitHub', visit: 'Visit website', groups: [['Mobile applications', '12 projects in Dart, Flutter, and API integrations.'], ['Programming fundamentals', '2 repositories with logic, exercises, and structured programming.'], ['Web experiences', '6 projects with HTML, CSS, JavaScript, React, and Vite.'], ['Complete applications', '3 projects integrating frontend, backend, and data.']] },
+      archive: { eyebrow: 'Projects / 26 selected', title: 'Ideas transformed<br>into <span>digital experiences.</span>', description: 'Projects built with C, Flutter, web technologies, and full-stack solutions.', all: 'All', c: 'C', flutter: 'Flutter', frontend: 'Frontend', fullstack: 'Full-stack', hint: 'Hover over a card to see its description.', github: 'View on GitHub', visit: 'Visit website', groups: [['Mobile applications', '15 projects across 17 repositories using Dart, Flutter, and API integrations.'], ['Programming fundamentals', '2 repositories with logic, exercises, and structured programming.'], ['Web experiences', '6 projects with HTML, CSS, JavaScript, React, and Vite.'], ['Complete applications', '3 projects integrating frontend, backend, and data.']] },
       cards: [
         ['Financing', 'An app to simulate financing amounts, installments, and terms.'],
         ['Flutter Quiz', 'A question-and-answer application with interaction and scoring.'],
@@ -109,6 +113,10 @@ const resources = {
         ['Employees JSON', 'Reading and displaying employee data from JSON.'],
         ['Splash Screen', 'A launch screen to improve the initial app experience.'],
         ['Products', 'An app for listing and presenting products.'],
+        ['Walk Photos', 'An app to capture and organize photos taken during walks.'],
+        ['GPS', 'A Flutter app featuring location services and GPS data.'],
+        ['Routes and Maps', 'A navigation project combining native routes and map visualization.'],
+        ['Google Maps and API', 'A project combining Google maps with API consumption and integration.'],
         ['C Files', 'A collection of exercises and files developed in the C language.'],
         ['LOP Repository', 'A repository of Programming Logic course activities in C.'],
         ['Cafeteria Aroma', 'A coffee shop interface built with JavaScript, React, and Vite.'],
@@ -302,7 +310,14 @@ document.addEventListener('DOMContentLoaded', async () => {
         if (title && Array.isArray(values)) title.textContent = values[0];
         if (description && Array.isArray(values)) description.textContent = values[1];
       });
-      document.querySelectorAll('.archive-card .archive-card-details a').forEach((link) => {
+      document.querySelectorAll('.project-tree-card').forEach((card) => {
+        const title = card.querySelector('h2')?.textContent;
+        const tree = card.querySelector('.repo-tree');
+        const root = card.querySelector('.repo-tree-root');
+        if (title && root) root.textContent = title;
+        if (title && tree) tree.setAttribute('aria-label', language === 'en' ? `Repositories for ${title}` : `Repositórios do projeto ${title}`);
+      });
+      document.querySelectorAll('.archive-card .archive-card-details > a, .archive-card .card-links a').forEach((link) => {
         const key = link.href.includes('github.com') ? 'archive.github' : 'archive.visit';
         link.innerHTML = `${t(key)} <span>↗</span>`;
       });

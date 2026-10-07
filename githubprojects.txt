@@ -12,6 +12,12 @@ https://github.com/EnzoToniato567/Caminhadas_Calorias_Flutter
 https://github.com/EnzoToniato567/Flutter_Funcionarios_Json
 https://github.com/EnzoToniato567/Splash_Screen_Flutter
 https://github.com/EnzoToniato567/Flutter_Produtos
+https://github.com/EnzoToniato567/Flutter-Fotos-Caminhadas.git
+https://github.com/EnzoToniato567/Flutter-Gps.git
+https://github.com/EnzoToniato567/Flutter-Rotas-Nativo.git
+https://github.com/EnzoToniato567/Flutter-Maps.git 
+https://github.com/EnzoToniato567/Flutter-Google-Maps.git
+https://github.com/EnzoToniato567/Flutter-API-Google-Maps.git
 
 frontend
 
